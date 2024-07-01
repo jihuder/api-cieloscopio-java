@@ -4,3 +4,5 @@
 
 . "Agregar Arquitectura 1"
 
+--------------------------------------------------------------------------------
+. "Presentar menù numerico, consultar o salir 0.1"
