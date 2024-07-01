@@ -13,3 +13,8 @@ Muestra información relevante como la temperatura, humedad, y descripción del 
 Java 8 o superior
 IntelliJ IDEA (opcional, pero recomendado)
 Una clave API de OpenWeather
+
+# Diseño del aplicativo por UML
+
+![Imagen UML del CieloScopio](https://github.com/jihuder/cieloscopio-api-java/blob/main/imagenes/UML-CieloScopio-api.jpg?raw=true)
+
