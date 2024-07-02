@@ -1,8 +1,10 @@
 # Repositorio de commits
 
-. ("Crear Arquitectura) -V 0.1"
+. ("Crear Arquitectura) -V 0.1" : ad1f4ad
 
-. "(Agregar Arquitectura) - V 1"
+. "(Agregar Arquitectura) - V 1" : ad1f4ad
 
 --------------------------------------------------------------------------------
-. "Presentar menù numerico, consultar o salir 0.1"
+. "(Crear|Presentar menù numerico, consultar o salir) -V 0.1": 16ccd14
+
+. "(Agregar|Presentar menù numerico, consultar o salir) -V 1":
