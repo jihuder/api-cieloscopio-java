@@ -9,4 +9,4 @@
 
 . "(Agregar|Presentar menù numerico, consultar o salir) -V 1": 5757eca
 
-."(Crear| Añadir opciones del menu) -V 0.1":
+. "(Crear| Añadir opciones del menu) -V 0.1" :

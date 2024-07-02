@@ -5,8 +5,6 @@ public class Principal {
 
 
         int opcion;
-
-
         do{
             String blockText = """
                     Challenge CieloScopio:
@@ -27,8 +25,29 @@ public class Principal {
             Scanner input = new Scanner(System.in);
             opcion = input.nextInt();
 
+            switch (opcion) {
+                case 1:
+                    System.out.println("Prueba Ciudad De Mexico");
+                    break;
+                case 2:
+                    System.out.println("Prueba Buenos Aires");
+                    break;
+                case 3:
+                    System.out.println("Prueba Bogota");
+                    break;
+                case 4:
+                    System.out.println("Prueba Lima");
+                    break;
+                case 5:
+                    System.out.println("Prueba Santiago");
+                    break;
+                case 6:
+                    System.out.println("Deseo consultar otra ciudad");
+                    break;
+                default:
+                    System.out.println("Consultar de nuevo");
+            }
         } while (opcion != 7);
-
 
 
 
