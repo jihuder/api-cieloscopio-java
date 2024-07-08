@@ -118,3 +118,46 @@ Tenemos que considerar que la longitud y latitud serán obtenidas a través de G
 #### NOTA: La respuesta la manipularemos en Postman.😶
 
 
+
+# ¿Que aprenderemos?
+
+Este proyecto tiene como objetivo entender el funcionamiento del protocolo HTTP y su aplicación en el desarrollo de software. A través de este proyecto, aprenderemos a consultar una API utilizando una aplicación en Java y a serializar los datos obtenidos de la API. Esta experiencia nos permitirá comprender mejor la interacción entre aplicaciones y servicios web, así como la manipulación y procesamiento de datos en aplicaciones Java 🚑.
+
+## ¿Pero que es una API?
+
+Una API (Interfaz de Programación de Aplicaciones) es un conjunto de definiciones y protocolos que permite la comunicación entre diferentes sistemas de información a través del protocolo HTTP (Protocolo de Transferencia de Hipertexto). Una API puede ser una aplicación externa a nuestro sistema o una capa dentro de nuestro sistema que facilita la interacción y el intercambio de datos.
+
+Específicamente, una API actúa como el punto de comunicación entre nuestra aplicación y otra aplicación, permitiendo enviar y recibir datos mediante solicitudes HTTP. Esto nos permite recolectar datos de otras fuentes y también integrar nuestros datos con otros sistemas, lo que mejora y enriquece nuestras aplicaciones. La utilización de APIs facilita la interoperabilidad entre diferentes aplicaciones y servicios, optimizando el desarrollo de software y ampliando las funcionalidades de nuestras aplicaciones.
+
+En el protocolo HTTP existen diferentes tipos de operaciones, pero solo vamos a utilizar, en nuestro caso específico, la operación GET que es para recolectar o traer información a nuestro sistema. Recuerda que la idea es tener una base de cómo funciona puntualmente una API.
+
+Por lo cual, necesitamos saber cómo funciona la ARQUITECTURA CLIENTE - SERVIDOR, en la cual fue montada.
+
+### ¿Que es un Cliente?
+
+Un cliente es un dispositivo o aplicación que solicita servicios o recursos de un servidor a través de una red. Es decir, un programa pide una acción en concreta a otro programa instalado en otro dispositivo, acciones/servicio como pedir una página web en específico, como consultar una base de datos, envío de un correo electrónico o un recurso como un video, una imagen, archivo hasta una información en específico, y todo lo hace por el protocolo HTTP.
+
+Pero para entender bien, tenemos que saber y tener en cuenta la diferencia entre servicio, recurso y microservicio:
+
+Servicio:
+Un servicio es un proceso lógico (QUE REQUIERE DE VARIOS PASOS CONVERTIDOS EN FUNCIONES) que se encarga de cumplir con un requerimiento específico solicitado por una acción de un usuario en cierto momento de un aplicativo. Puede ser una funcionalidad como enviar un correo electrónico, procesar una transacción bancaria, o consultar datos de una base de datos, entre otros ejemplos. Esencialmente, un servicio encapsula la lógica necesaria para llevar a cabo una operación deseada dentro de un sistema informático.
+
+Recurso:
+Un recurso lo tenemos que ver como un elemento o dato específico que puede ser accedido o utilizado por un sistema. Por ejemplo: un archivo, una imagen, datos en una base de datos, etc. Los recursos son los componentes que los servicios manipulan o entregan según las solicitudes de los usuarios.
+
+Micro-Servicio:
+Un microServicio lo tenemos que ver como SERVICIO que divide su proceso lógico (PASOS SEPARADOS Y REUNIDOS EN FUNCIONES) en partes más pequeñas (TOMAR ESAS FUNCIONES Y SEPARARLAS DEL SISTEMA) y que sigan interactuando entre ellas para llevar a cabo el SERVICIO. La separación del servicio se hace por medio de una arquitectura de diferentes servidores en que cada funcionalidad va a ser independiente y autónoma del sistema, pero cada funcionalidad va a ser desarrollada, desplegada y gestionada en un SOLO SERVIDOR que interactúa con otros servidores/funcionalidades para llevar a cabo el SERVICIO. Por ejemplo, un servicio de comercio electrónico podría tener microservicios separados para la gestión de usuarios, procesamiento de pagos, gestión de inventario, etc., que juntos componen la funcionalidad completa del servicio de comercio electrónico.
+
+En resumen, un servicio es la capacidad de realizar acciones o procesos, mientras que un recurso es el objeto sobre el cual actúan esas acciones o procesos y un microservicio divide la lógica de un servicio mediante una arquitectura de servidores que interactúan entre sí para llevar a cabo el servicio.
+
+Nota: Aunque un servicio, como solicitar una página web a un servidor o consultar una base de datos, puede dividirse en microservicios, es importante evaluar si realmente vale la pena hacerlo. En una arquitectura de microservicios, debemos considerar todos los aspectos y tareas necesarios para transformar un servicio en un microservicio ya que lo coloqué de manera de ejemplo del porqué que un microServicio es un SERVICIO y cuál su relación con este.
+
+Para entender mejor un microservicio lo miramos esencialmente como un tipo de servicio, y su relación radica en su capacidad para descomponer la lógica y las reglas de negocio en componentes más pequeños y manejables. Esto ayuda a evitar que la ejecución de una parte del aplicativo entorpezca el funcionamiento general del sistema.
+
+En general, los microservicios se utilizan para servicios que están estrechamente relacionados con la lógica y las reglas de negocio, permitiendo así una división eficiente de su funcionamiento. Esta división asegura que cada componente pueda operar de manera independiente, mejorando la escalabilidad, la resiliencia y el mantenimiento del aplicativo durante su ejecución.
+
+
+
+### ¿Qué es un Servidor?
+
+Un servidor es un software o dispositivo físico que guarda y proporciona servicios (lógica), recursos y datos a través de una red, ya sea local o en internet.
