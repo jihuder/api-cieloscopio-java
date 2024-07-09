@@ -181,7 +181,7 @@ El primer paso vamos a ver cómo JAVA tiene un módulo en donde gestiona el prot
 
 Buscamos httpRequest:
 
-!(JavaDocs httpRequest)[https://github.com/jihuder/api-cieloscopio-java/blob/main/imagenes/Java-Http_request.png?raw=true]
+![JavaDocs httpRequest](https://github.com/jihuder/api-cieloscopio-java/blob/main/imagenes/Java-Http_request.png?raw=true)
 
 
 Entonces, estamos viendo cómo Java maneja el protocolo HTTP comenzando desde la realización de una petición. No profundizaremos en los detalles de cómo se hace, sino que esto servirá como punto de referencia inicial para que podamos hacer investigación respectiva, partiendo de la comprensión de la documentación. Más adelante, desarrollaremos otro aplicativo cuya idea central será entender la documentación de los diferentes módulos y, a partir de ella, crear nuestra propia documentación por módulo mientras desarrollamos el aplicativo.
