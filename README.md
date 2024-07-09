@@ -161,3 +161,24 @@ En general, los microservicios se utilizan para servicios que están estrechamen
 ### ¿Qué es un Servidor?
 
 Un servidor es un software o dispositivo físico que guarda y proporciona servicios (lógica), recursos y datos a través de una red, ya sea local o en internet.
+
+# ¿Cual es el siguiente paso?
+
+Ahora sabiendo el funcionamiento de la API OpenWeather y que es una API tenemos que saber como hacer una peticion y que hacer con la respuesta de la peticion.
+Vamos a ver concepto como serializacion y desarializacion.
+
+## ¿Como hacemos uan peticion?
+
+
+Dado que estamos realizando una consulta a una API 🎁, es fundamental adaptar nuestro aplicativo al funcionamiento básico de cualquier API. Esto implica crear una capa que maneje exclusivamente el protocolo HTTP, en donde podamos comunicarnos con una aplicativo externo utilizando el internet. Sin embargo, debido a la simplicidad de nuestro aplicativo de consulta, no implementaremos una capa separada y manejaremos las peticiones directamente según la lógica que conformemos.
+
+Volviendo al contexto de HTTP (Hypertext Transfer Protocol), una petición o request es una comunicación que un cliente (como un navegador web) envía a un servidor para solicitar algún tipo de recurso o servicio. Aunque HTTP incluye varios tipos de peticiones, no profundizaremos en todos ellos. Para el funcionamiento de nuestro aplicativo, nos centraremos en el verbo GET y cómo utilizarlo en nuestra aplicación hecha en Java.
+
+El primer paso vamos a ver cómo JAVA tiene un módulo en donde gestiona el protocolo HTTP, por lo cual, buscamos en JavaDocs versión 17, es importante la versión porque JAVA tiene diferentes documentaciones para cada una de sus versiones. En el buscador ponemos HTTP y vemos cómo la documentación nos va arrojando diferentes tipos de documentación dependiendo del funcionamiento de lo que busquemos de HTTP.
+
+Buscamos httpRequest:
+
+imagen
+
+
+Entonces, estamos viendo cómo Java maneja el protocolo HTTP comenzando desde la realización de una petición. No profundizaremos en los detalles de cómo se hace, sino que esto servirá como punto de referencia inicial para que podamos hacer investigación respectiva, partiendo de la comprensión de la documentación. Más adelante, desarrollaremos otro aplicativo cuya idea central será entender la documentación de los diferentes módulos y, a partir de ella, crear nuestra propia documentación por módulo mientras desarrollamos el aplicativo.
