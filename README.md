@@ -241,19 +241,9 @@ imagen
 
 Ya descargado el archivo JAR, vamos a Intellij IDEA y hacemos estas acciones:
 
+Configuracion de Intellij:
 
-Vamos a OPCIONES DE CONFIGURACION:
-   └──Project Structur:
-        └──Nos sale una ventana:
-                   └──Escogemos: "+"
-                          └──Damos clic en:
-                                  └── JARs or Directories:
-                                            └── Nos bota el sistema de archivo de
-                                                nuestro sistema operativo:
-                                                        └──Buscamos el JAR que bajamos
-                                                            de Marven Repositorio
-                                                                └── Agregamos gson-2.10.1.jar
-
+imagen
                                 
 
 
