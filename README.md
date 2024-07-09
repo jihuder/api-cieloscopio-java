@@ -227,23 +227,23 @@ https://mvnrepository.com/
 
 En el buscador escribimos Gson y escogemos la versión que nos ha hecho el Google:
 
-imagen
+![Escoger version de Google](https://github.com/jihuder/api-cieloscopio-java/blob/main/imagenes/Gson%20Google.png?raw=true)
 
 Ahora vamos a las versiones y le damos clic en la versión que deseamos instalar.
 
-imagen
+![Escoger version](https://github.com/jihuder/api-cieloscopio-java/blob/main/imagenes/Gson%20Version.png?raw=true)
 
 **NOTA:** Es importante darle clic en el apartado de las versiones, ya que nos abre la interfaz o la vista en donde podemos descargar la versión que deseamos.
 
 Ahora, para poder descargar, lo haremos en un archivo JAR. Le damos clic en JAR y nos da una descarga automática.
 
-imagen
+![Descargar el archivo JAR](https://github.com/jihuder/api-cieloscopio-java/blob/main/imagenes/Gson%20Jar.png?raw=true)
 
 Ya descargado el archivo JAR, vamos a Intellij IDEA y hacemos estas acciones:
 
 Configuracion de Intellij:
 
-imagen
+![Configuracion Intellij con GSON](https://github.com/jihuder/api-cieloscopio-java/blob/main/imagenes/Gson%20Intellij.png?raw=true)
                                 
 
 
