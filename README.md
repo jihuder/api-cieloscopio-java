@@ -207,15 +207,55 @@ Como tercera medida, JSON es un texto plano. ¿Qué significa esto? Significa qu
 La serialización es el proceso de convertir un objeto Java (una instancia de una clase) en un JSON (formato de texto plano) para transmitir datos por internet con el protocolo HTTP hacia otros lenguajes o aplicaciones. Pero vamos más allá, no es solo convertirlo en un formato de texto plano, sino que nuestro objeto antes tenía direcciones de memoria y estaba erradicado en un espacio de memoria de nuestro dispositivo. Al convertirlo en un texto plano, la información del objeto sigue siendo la misma, pero no tiene ninguna dirección asociada para la memoria, porque si tuviera una dirección asociada sería imposible que el otro dispositivo admitiera esta información cuando le llegue, ya que NO podría UBICAR las mismas direcciones de memoria. En caso de que se pudiera, se tendrían que hacer diferentes procesos al sistema operativo que solo recargarían la operación y demoraría todo el aplicativo, haciendo imposible su ejecución y muchas otras razones de contexto del porqué un JSON no tiene direcciones de memoria asociadas.
 Es por esto que dicen que se puede hacer portable un programa y pasarlo a una USB a otro sistema cuando se le aplica la serialización, es decir, sin asignación de memoria interna.
 
-**NOTA Interoperabilidad :**Al eliminar las direcciones de memoria, se facilita la interoperabilidad entre diferentes sistemas y lenguajes de programación. Por ejemplo, un JSON generado en Java puede ser leído y utilizado en JavaScript, Python, etc.
+**NOTA Interoperabilidad :** Al eliminar las direcciones de memoria, se facilita la interoperabilidad entre diferentes sistemas y lenguajes de programación. Por ejemplo, un JSON generado en Java puede ser leído y utilizado en JavaScript, Python, etc.
 
 
-## ¿Qué es la deserialización?
+# ¿Qué es la deserialización?
 
 La deserialización es el proceso inverso, es decir, convertir un JSON en un objeto Java. Es decir, cuando recibimos información de otro aplicativo por internet por medio del protocolo HTTP en nuestro caso.
 
 Cuando recibimos el formato de texto, en este caso JSON, lo deserializamos, es decir, a cada dato del JSON le asignamos memoria para convertirlo en la estructura de datos deseada, en nuestro caso un objeto (la instancia de una clase).
 
-**NOTA Asignación de memoria :**Durante la deserialización, se asigna memoria en el heap de Java para los datos que componen el objeto. Esto es necesario para reconstruir la estructura de datos en memoria.
+**NOTA Asignación de memoria :** Durante la deserialización, se asigna memoria en el heap de Java para los datos que componen el objeto. Esto es necesario para reconstruir la estructura de datos en memoria.
 
 # Gson ¿Como lo hacemos en java?
+
+Gson es la librería en donde manipularemos los JSON, es decir, por medio de Gson podemos serializar y deserializar la información de JSON.
+
+Antes de nada, instalamos Gson en nuestro proyecto por medio de Maven repository:
+https://mvnrepository.com/
+
+En el buscador escribimos Gson y escogemos la versión que nos ha hecho el Google:
+
+imagen
+
+Ahora vamos a las versiones y le damos clic en la versión que deseamos instalar.
+
+imagen
+
+**NOTA:** Es importante darle clic en el apartado de las versiones, ya que nos abre la interfaz o la vista en donde podemos descargar la versión que deseamos.
+
+Ahora, para poder descargar, lo haremos en un archivo JAR. Le damos clic en JAR y nos da una descarga automática.
+
+imagen
+
+Ya descargado el archivo JAR, vamos a Intellij IDEA y hacemos estas acciones:
+
+
+Vamos a OPCIONES DE CONFIGURACION:
+   └──Project Structur:
+        └──Nos sale una ventana:
+                   └──Escogemos: "+"
+                          └──Damos clic en:
+                                  └── JARs or Directories:
+                                            └── Nos bota el sistema de archivo de
+                                                nuestro sistema operativo:
+                                                        └──Buscamos el JAR que bajamos
+                                                            de Marven Repositorio
+                                                                └── Agregamos gson-2.10.1.jar
+
+                                
+
+
+
+                                  
