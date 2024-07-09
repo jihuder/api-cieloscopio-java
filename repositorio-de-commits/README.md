@@ -13,4 +13,6 @@
 
 . "(Agregar| Añadir opciones del menu) -V 1" : 31ff6e9
 
-. "(Creacion de la historia de usuario: Consulta de Datos Meteorológicos)"
+. "(Creacion de la historia de usuario: Consulta de Datos Meteorológicos)": 33b620a
+
+. "(Crear| Inicio del flujo de ejecución: llamada a Busqueda según la lógica de negocio) -V 0.1" 
