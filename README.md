@@ -185,3 +185,19 @@ Buscamos httpRequest:
 
 
 Entonces, estamos viendo cómo Java maneja el protocolo HTTP comenzando desde la realización de una petición. No profundizaremos en los detalles de cómo se hace, sino que esto servirá como punto de referencia inicial para que podamos hacer investigación respectiva, partiendo de la comprensión de la documentación. Más adelante, desarrollaremos otro aplicativo cuya idea central será entender la documentación de los diferentes módulos y, a partir de ella, crear nuestra propia documentación por módulo mientras desarrollamos el aplicativo.
+
+# Ahora vamos con el concepto propio de serializacion y deserializacion
+
+Para entender el concepto de serialización y deserialización, primero debemos comprender qué es un JSON, ya que interviene en ambos procesos.
+
+JSON es un formato de texto plano, pero ¿de dónde proviene y por qué se creó? Proviene de las estructuras de datos que tienen un sentido común en diferentes lenguajes de programación. Este sentido común son los objetos, presentes en lenguajes como Java, Python, JavaScript, entre otros. Los objetos comparten la misma estructura, aunque con diferentes nombres. Entonces JSON como primera medida utilizo esa estructura de objeto para standarizar la representacion de la información en los diferentes lenguajes.
+
+¿Pero para qué quiero estandarizar la información?
+
+Sencillo, para poder comunicarme con diferentes lenguajes de programación de una forma unificada.
+
+Json es el puente de comunicacion entre los diferentes lenguajes y aplicativos, es la forma que utiliza el protoco HTTP para enviar información de un sistema a otro y que se entendible por todas las partes.
+
+Entonces, como segunda medida, JSON nos sirve como un protocolo estandarizado para enviar información y que la otra parte la reciba correctamente.
+
+Como tercera medida, JSON es un texto plano. ¿Qué significa esto? Significa que la información no está representada en memoria. En otras palabras, la información no está guardada ni asignada a ningún lugar de la memoria dinámica.
