@@ -186,7 +186,7 @@ Buscamos httpRequest:
 
 Entonces, estamos viendo cómo Java maneja el protocolo HTTP comenzando desde la realización de una petición. No profundizaremos en los detalles de cómo se hace, sino que esto servirá como punto de referencia inicial para que podamos hacer investigación respectiva, partiendo de la comprensión de la documentación. Más adelante, desarrollaremos otro aplicativo cuya idea central será entender la documentación de los diferentes módulos y, a partir de ella, crear nuestra propia documentación por módulo mientras desarrollamos el aplicativo.
 
-# Ahora vamos con el concepto propio de serializacion y deserializacion
+# Ahora vamos con el concepto propio de serialización y deserialización
 
 Para entender el concepto de serialización y deserialización, primero debemos comprender qué es un JSON, ya que interviene en ambos procesos.
 
@@ -201,11 +201,6 @@ Json es el puente de comunicacion entre los diferentes lenguajes y aplicativos, 
 Entonces, como segunda medida, JSON nos sirve como un protocolo estandarizado para enviar información y que la otra parte la reciba correctamente.
 
 Como tercera medida, JSON es un texto plano. ¿Qué significa esto? Significa que la información no está representada en memoria. En otras palabras, la información no está guardada ni asignada a ningún lugar de la memoria dinámica.
-
-## ¿Que es la Serealización?
-
- porque si tuviera una direccion asociada seria imposible al llegar al otro dispositivo tener las mismas ubicaciones de memoria y en caso que se pudiera se tendria que hacer procesos al sistema operativo que solo recargaria la operacion y rentalizaria todo el aplicativo haciendo imposible su ejecucion o demasiado lenta. Es por esto que dicen que se puede hacer portable un programa y pasarlo a una usb a otro sistema cuando se le aplica la serealizacion, es dicir, sin asignacion de memoria interna. 
-
 
 # ¿Qué es la Serialización?
 
