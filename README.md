@@ -139,18 +139,21 @@ Un cliente es un dispositivo o aplicación que solicita servicios o recursos de 
 
 Pero para entender bien, tenemos que saber y tener en cuenta la diferencia entre servicio, recurso y microservicio:
 
-Servicio:
+**Servicio:**
+
 Un servicio es un proceso lógico (QUE REQUIERE DE VARIOS PASOS CONVERTIDOS EN FUNCIONES) que se encarga de cumplir con un requerimiento específico solicitado por una acción de un usuario en cierto momento de un aplicativo. Puede ser una funcionalidad como enviar un correo electrónico, procesar una transacción bancaria, o consultar datos de una base de datos, entre otros ejemplos. Esencialmente, un servicio encapsula la lógica necesaria para llevar a cabo una operación deseada dentro de un sistema informático.
 
-Recurso:
+**Recurso:**
+
 Un recurso lo tenemos que ver como un elemento o dato específico que puede ser accedido o utilizado por un sistema. Por ejemplo: un archivo, una imagen, datos en una base de datos, etc. Los recursos son los componentes que los servicios manipulan o entregan según las solicitudes de los usuarios.
 
-Micro-Servicio:
+**Micro-Servicio:**
+
 Un microServicio lo tenemos que ver como SERVICIO que divide su proceso lógico (PASOS SEPARADOS Y REUNIDOS EN FUNCIONES) en partes más pequeñas (TOMAR ESAS FUNCIONES Y SEPARARLAS DEL SISTEMA) y que sigan interactuando entre ellas para llevar a cabo el SERVICIO. La separación del servicio se hace por medio de una arquitectura de diferentes servidores en que cada funcionalidad va a ser independiente y autónoma del sistema, pero cada funcionalidad va a ser desarrollada, desplegada y gestionada en un SOLO SERVIDOR que interactúa con otros servidores/funcionalidades para llevar a cabo el SERVICIO. Por ejemplo, un servicio de comercio electrónico podría tener microservicios separados para la gestión de usuarios, procesamiento de pagos, gestión de inventario, etc., que juntos componen la funcionalidad completa del servicio de comercio electrónico.
 
 En resumen, un servicio es la capacidad de realizar acciones o procesos, mientras que un recurso es el objeto sobre el cual actúan esas acciones o procesos y un microservicio divide la lógica de un servicio mediante una arquitectura de servidores que interactúan entre sí para llevar a cabo el servicio.
 
-Nota: Aunque un servicio, como solicitar una página web a un servidor o consultar una base de datos, puede dividirse en microservicios, es importante evaluar si realmente vale la pena hacerlo. En una arquitectura de microservicios, debemos considerar todos los aspectos y tareas necesarios para transformar un servicio en un microservicio ya que lo coloqué de manera de ejemplo del porqué que un microServicio es un SERVICIO y cuál su relación con este.
+**Nota:** Aunque un servicio, como solicitar una página web a un servidor o consultar una base de datos, puede dividirse en microservicios, es importante evaluar si realmente vale la pena hacerlo. En una arquitectura de microservicios, debemos considerar todos los aspectos y tareas necesarios para transformar un servicio en un microservicio ya que lo coloqué de manera de ejemplo del porqué que un microServicio es un SERVICIO y cuál su relación con este.
 
 Para entender mejor un microservicio lo miramos esencialmente como un tipo de servicio, y su relación radica en su capacidad para descomponer la lógica y las reglas de negocio en componentes más pequeños y manejables. Esto ayuda a evitar que la ejecución de una parte del aplicativo entorpezca el funcionamiento general del sistema.
 
@@ -167,7 +170,7 @@ Un servidor es un software o dispositivo físico que guarda y proporciona servic
 Ahora sabiendo el funcionamiento de la API OpenWeather y que es una API tenemos que saber como hacer una peticion y que hacer con la respuesta de la peticion.
 Vamos a ver concepto como serializacion y desarializacion.
 
-## ¿Como hacemos uan peticion?
+## ¿Como hacemos una peticion?
 
 
 Dado que estamos realizando una consulta a una API 🎁, es fundamental adaptar nuestro aplicativo al funcionamiento básico de cualquier API. Esto implica crear una capa que maneje exclusivamente el protocolo HTTP, en donde podamos comunicarnos con una aplicativo externo utilizando el internet. Sin embargo, debido a la simplicidad de nuestro aplicativo de consulta, no implementaremos una capa separada y manejaremos las peticiones directamente según la lógica que conformemos.
@@ -178,7 +181,7 @@ El primer paso vamos a ver cómo JAVA tiene un módulo en donde gestiona el prot
 
 Buscamos httpRequest:
 
-imagen
+!(JavaDocs httpRequest)[https://github.com/jihuder/api-cieloscopio-java/blob/main/imagenes/Java-Http_request.png?raw=true]
 
 
 Entonces, estamos viendo cómo Java maneja el protocolo HTTP comenzando desde la realización de una petición. No profundizaremos en los detalles de cómo se hace, sino que esto servirá como punto de referencia inicial para que podamos hacer investigación respectiva, partiendo de la comprensión de la documentación. Más adelante, desarrollaremos otro aplicativo cuya idea central será entender la documentación de los diferentes módulos y, a partir de ella, crear nuestra propia documentación por módulo mientras desarrollamos el aplicativo.
