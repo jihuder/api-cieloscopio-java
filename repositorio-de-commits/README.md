@@ -9,4 +9,8 @@
 
 . "(Agregar|Presentar menù numerico, consultar o salir) -V 1": 5757eca
 
-. "(Crear| Añadir opciones del menu) -V 0.1" :
+. "(Crear| Añadir opciones del menu) -V 0.1" : 25bb08a
+
+. "(Agregar| Añadir opciones del menu) -V 1" : 31ff6e9
+
+. "(Creacion de la historia de usuario: Consulta de Datos Meteorológicos)"
